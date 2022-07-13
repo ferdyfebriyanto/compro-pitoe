@@ -204,6 +204,19 @@ section {
     margin-top: 3px;
 }
 
+@media (max-width: 667px)
+{
+    .header .logo span
+    {
+       font-size: 20px;
+    }
+    
+}
+
+
+
+
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -339,11 +352,14 @@ section {
 }
 
 
+
+
 /**
 * Mobile Navigation 
 */
 
-.mobile-nav-toggle {
+.mobile-nav-toggle 
+{
     color: #b57720;
     /* color: #012970; */
     font-size: 28px;
@@ -565,12 +581,16 @@ section {
 --------------------------------------------------------------*/
 
 .about {
-    background-color: #111;
+    background: url(../img/bg/city3.jpg) bottom center no-repeat;
+    opacity: 3;
+    width: 100%;
+    height: 100vh; 
+    background-size: cover;
 }
 
 .about .content {
     background-color: #1f1f1f;
-    padding: 40px;
+    padding: 30px;
 }
 
 .about h3 {
@@ -597,7 +617,7 @@ section {
     padding: 15px 40px;
     border-radius: 4px;
     transition: 0.5s;
-    color: #fff;
+    color: rgb(255, 255, 255);
     background: #b57720;
     box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.4);
 }
@@ -618,15 +638,23 @@ section {
 .about .btn-read-more:hover i {
     transform: translateX(5px);
 }
-
-
+@media (max-width:667px) {
+    .about{
+        height: auto;
+    }
+}
 /*--------------------------------------------------------------
 # Values
 --------------------------------------------------------------*/
 
 .values {
-    background-color: #111;
+    background: url(../img/bg/city4.jpg) bottom center no-repeat;
+    opacity: 1;
+    width: 100%;
+    height: 100vh; 
+    background-size: cover;
 }
+
 
 .values .box {
     padding: 30px;
@@ -634,8 +662,8 @@ section {
     text-align: center;
     transition: 0.3s;
     height: 100%;
-    background-color: #ffffff;
-    border-radius: 10px;
+    background-color: #11111165;
+    border-radius: 100%;
 }
 
 .values .box img {
@@ -646,11 +674,10 @@ section {
 
 .values .box h3 {
     font-size: 24px;
-    color: #444444;
+    color: #ffffff;
     font-weight: 700;
     margin-bottom: 18px;
 }
-
 .values .box:hover {
     box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
 }
@@ -658,7 +685,21 @@ section {
 .values .box:hover img {
     transform: scale(1);
 }
-
+@media (max-width: 667px) {
+    .values {
+        background: url(../img/bg/city6.jpg) bottom center no-repeat;
+        opacity: 1;
+        width: 100%;
+        height: 100vh; 
+        background-size: cover;
+    }
+}
+@media (max-width: 667px) {
+    .values .box {
+        padding: 20px;
+        margin: 20px;
+    }
+}
 
 /*--------------------------------------------------------------
 # Counts
@@ -704,7 +745,11 @@ section {
 --------------------------------------------------------------*/
 
 .features {
-    background-color: #111;
+    background: url(../img/bg/train.jpg) bottom center no-repeat;
+    opacity: 3;
+    width: 100%;
+    height: 100vh; 
+    background-size: cover;
 }
 
 .features .feature-box {
@@ -1133,7 +1178,11 @@ section {
 --------------------------------------------------------------*/
 
 .portfolio {
-    background-color: #111;
+    background: url(../img/bg/concert2.jpg)  center no-repeat;
+    opacity: 1;
+    width: 100%;
+    height: 100vh; 
+    background-size: cover;
 }
 
 .portfolio #portfolio-flters {
@@ -1141,8 +1190,6 @@ section {
     margin: 0 auto 25px auto;
     list-style: none;
     text-align: center;
-    /* background: white;
-    border-radius: 50px; */
     padding: 2px 15px;
 }
 
@@ -1153,7 +1200,7 @@ section {
     font-size: 15px;
     font-weight: 600;
     line-height: 1;
-    color: #444444;
+    color: #fafafa;
     margin: 0 4px 8px 4px;
     transition: 0.3s;
     border-radius: 50px;
@@ -1682,6 +1729,7 @@ section {
     color: #444444;
     background: #fafbff;
     padding: 30px;
+    height: 200px;
 }
 
 .contact .info-box i {
@@ -2410,6 +2458,11 @@ section {
     font-family: "Nunito", sans-serif;
     margin-top: 3px;
 }
+@media  (max-width: 667px){
+    .footer .footer-top .footer-info .logo span{
+        font-size: 20px;
+    }
+}
 
 .footer .footer-top .footer-info p {
     font-size: 14px;
@@ -2498,3 +2551,6 @@ section {
     font-size: 13px;
     color: #f7f7f7;
 }
+
+/* @media 
+} */
